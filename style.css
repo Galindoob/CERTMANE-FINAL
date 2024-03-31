@@ -128,11 +128,4 @@ body{
 
 
 
-#galeria-club {
-    background-color: lightblue; /* Cambia el color de fondo a celeste */
-    padding: 20px; /* Ajusta el espacio interior para separar el contenido del borde */
-    display: flex;
-    justify-content: space-between;
-    padding-top: 20px;
-}
 
