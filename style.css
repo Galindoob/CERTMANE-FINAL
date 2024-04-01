@@ -1,55 +1,41 @@
-/* Establece el margen de todos los elementos en 0 y el modelo de caja como border-box */
 *{
     margin: 0;
     box-sizing: border-box;
 }
-
-/* Estilos para el cuerpo de la página */
 body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Define la fuente del texto */
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
 }
 
-/* Estilos para el encabezado */
 .header{
-    background-color: blue; /* Establece el color de fondo del encabezado */
-    height: 100px; /* Establece la altura del encabezado */
-    position: relative; /* Establece la posición del encabezado como relativa */
-    width: 100%; /* Establece el ancho del encabezado al 100% del contenedor */
-    top: 0; /* Coloca el encabezado en la parte superior de su contenedor */
-    left: 0; /* Coloca el encabezado en la parte izquierda de su contenedor */
+    background-color: blue; 
+    height: 100px; 
+    position: relative; 
+    width: 100%;
+    top: 0; 
+    left: 0; 
 }
-
-/* Estilos para la barra de navegación */
 .nav{
-    display: flex; /* Utiliza un contenedor flexible para la barra de navegación */
-    justify-content: space-between; /* Distribuye el espacio entre los elementos de la barra de navegación */
-    max-width: 1500px; /* Establece el ancho máximo de la barra de navegación */
-    margin: 0 auto; /* Centra la barra de navegación horizontalmente */
-    background-color: brown; /* Establece el color de fondo de la barra de navegación */
+    display: flex; 
+    justify-content: space-between; 
+    max-width: 1500px; 
+    margin: 0 auto; 
+    background-color: brown; 
 }
-
-/* Estilos para el logotipo */
 .logo{
-    font-size: 30px; /* Define el tamaño del logotipo */
-    font-weight: bold; /* Establece la negrita para el logotipo */
-    padding: 0 40px; /* Establece el relleno del logotipo */
-    line-height: 80px; /* Establece la altura de línea del logotipo */
+    font-size: 30px; 
+    font-weight: bold; 
+    padding: 0 40px; 
+    line-height: 80px;
 }
-
-/* Estilos para los enlaces de navegación */
 .nav-link{
     color: white; /* Establece el color del texto de los enlaces de navegación */
     text-decoration: none; /* Quita la decoración de subrayado de los enlaces de navegación */
 }
-
-/* Estilos para el menú de navegación */
 .nav-menu{
     display: flex; /* Utiliza un contenedor flexible para el menú de navegación */
     margin-right: 40px; /* Establece el margen derecho del menú de navegación */
     list-style: none; /* Quita los estilos de lista predeterminados */
 }
-
-/* Estilos para cada ítem del menú de navegación */
 .nav-menu-item{
     font-size: 18px; /* Define el tamaño del texto para cada ítem del menú */
     margin: 0 10px; /* Establece el margen horizontal para cada ítem del menú */
@@ -57,53 +43,47 @@ body{
     text-transform: uppercase; /* Transforma el texto a mayúsculas */
     width: max-content; /* Establece el ancho máximo para cada ítem del menú */
 }
-
-/* Estilos para los enlaces del menú de navegación al pasar el cursor por encima */
 .nav-menu-link:hover{
     color: rgba(226, 43, 169); /* Cambia el color del texto al pasar el cursor sobre los enlaces del menú */
 }
-
-/* Estilos para la sección de datos e intereses */
+.seccion-con-imagen {
+    position: relative; /* Permite posicionar el círculo correctamente */
+    font-size: 24px;
+    text-transform: uppercase;
+    color: black;
+    height: 600px; /* Ajusta la altura según tu diseño */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; /* Alinea el texto con el borde inferior */
+}
 .datos-intereses{
     background-color: blue; /* Establece el color de fondo de la sección de datos e intereses */
     margin-top: 20px; /* Establece el margen superior de la sección de datos e intereses */
     display: flex; /* Utiliza un contenedor flexible para la sección de datos e intereses */
 }
-
-/* Estilos para la sección de datos */
 .datos{
     margin-top: 20px; /* Establece el margen superior de la sección de datos */
     margin-bottom: 20px; /* Establece el margen inferior de la sección de datos */
     color: white; /* Establece el color del texto de la sección de datos */
     margin-left: 40px; /* Establece el margen izquierdo de la sección de datos */
 }
-
-/* Estilos para las imágenes dentro de la sección de datos */
 .datos img{
     border-radius: 30px; /* Establece el radio de borde para redondear las esquinas de la imagen */
     width: 200px; /* Establece el ancho de la imagen */
     height: 150px; /* Establece la altura de la imagen */
 }
-
-/* Estilos para la sección de enlaces */
 #enlaces {
     background-color: lightgray; /* Establece el color de fondo de la sección de enlaces */
     padding: 20px; /* Establece el relleno de la sección de enlaces */
 }
-
-/* Estilos para el título de la sección de enlaces */
 #enlaces h2 {
     font-size: 24px; /* Define el tamaño del título de la sección de enlaces */
     margin-bottom: 10px; /* Establece el margen inferior del título de la sección de enlaces */
 }
-
-/* Estilos para el contenedor de enlaces */
 .enlaces-contenedor {
     display: flex; /* Utiliza un contenedor flexible para los enlaces */
     flex-direction: column; /* Establece la dirección de la flexión como columna */
 }
-
-/* Estilos para cada enlace */
 .enlace {
     display: flex; /* Utiliza un contenedor flexible para cada enlace */
     align-items: center; /* Alinea los elementos dentro del contenedor del enlace */
@@ -115,8 +95,6 @@ body{
     border: 1px solid black; /* Establece un borde alrededor del contenedor del enlace */
     padding: 10px; /* Establece el relleno del contenedor del enlace */
 }
-
-/* Estilos para el enlace dentro del contenedor */
 .enlace a {
     text-decoration: none; /* Quita la decoración de subrayado del enlace */
     color: black; /* Establece el color del texto del enlace */
@@ -124,6 +102,78 @@ body{
     width: 100%; /* Establece el ancho del enlace al 100% del contenedor */
     display: inline-block; /* Permite que el enlace sea un bloque en línea */
 }
+#Proyectos {
+    background-color: blue; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 20px; /* Espacio alrededor del contenido */
+}
+.proyecto-container {
+    display: flex; /* Alineación horizontal de los elementos */
+    align-items: center; /* Alineación vertical al centro */
+    justify-content: space-between; /* Espacio entre la imagen y el texto */
+}
+.imagen-proyecto1 {
+    width: 50%; /* Ancho de la imagen */
+    padding: 20px; /* Espacio alrededor de la imagen */
+}
+.imagen-proyecto1 img {
+    border-radius: 20px; /* Esquinas redondeadas */
+    max-width: 100%; /* Ajuste automático del ancho */
+}
+.texto-proyecto1 {
+    width: 50%; /* Ancho del texto */
+    padding: 20px; /* Espacio alrededor del texto */
+}
+.iconos-proyecto {
+    display: flex; /* Alinea los íconos horizontalmente */
+    justify-content: start; /* Alinea los íconos al inicio del contenedor */
+    gap: 10px; /* Espacio entre los íconos */
+}
+.icono {
+    width: 100px; /* Ancho del ícono */
+    height: auto; /* Altura automática para mantener la proporción */
+    transition: transform 0.3s ease; /* Transición suave para el efecto de hover */
+}
+.icono:hover {
+    transform: scale(1.1); /* Efecto de crecimiento al pasar el cursor */
+}
+.imagenes-adicionales {
+    display: flex; /* Alinea las imágenes horizontalmente */
+    justify-content: start; /* Alinea las imágenes al inicio del contenedor */
+    gap: 10px; /* Espacio entre las imágenes */
+}
+.imagen-adicional {
+    width: 100px; /* Ancho de las imágenes */
+    height: auto; /* Altura automática para mantener la proporción */
+    display: block; /* Asegura que las imágenes no estén en línea con otros elementos */
+}
+.proyecto-container,
+.proyecto-container2 {
+    display: flex; /* Alineación horizontal de los elementos */
+    align-items: center; /* Alineación vertical al centro */
+    justify-content: space-between; /* Espacio entre la imagen y el texto */
+}
+.imagen-proyecto1,
+.texto-proyecto1 {
+    width: 50%; /* Ancho del texto e imagen */
+    padding: 20px; /* Espacio alrededor del texto e imagen */
+}
+.imagen-proyecto1 img,
+.texto-proyecto1 img {
+    border-radius: 20px; /* Esquinas redondeadas */
+    max-width: 100%; /* Ajuste automático del ancho */
+}
+.imagen-proyecto1 img {
+    width: 500px; /* Establece un ancho fijo para la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 20px; /* Esquinas redondeadas */
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+}
+
+
+
+
+
 
 
 
