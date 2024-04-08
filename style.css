@@ -118,6 +118,7 @@ body{
 .imagen-proyecto1 img {
     border-radius: 20px;
     max-width: 100%;
+}
 .texto-proyecto1 {
     width: 50%; 
     padding: 20px; 
